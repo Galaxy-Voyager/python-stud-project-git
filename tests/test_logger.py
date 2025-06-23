@@ -13,6 +13,7 @@ def test_utils_logging():
         log_operation("Тест", True, param="value")
         mock_log.assert_called_once()
 
+
 def test_masks_logging():
     """Тест логирования для модуля masks"""
     with patch.object(logging.getLogger('masks'), 'error') as mock_log:

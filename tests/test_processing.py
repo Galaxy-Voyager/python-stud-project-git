@@ -12,6 +12,7 @@ def test_filter_by_state(test_operations, state, expected_count):
     result = filter_by_state(test_operations, state)
     assert len(result) == expected_count
 
+
 def test_sort_by_date(test_operations):
     result = sort_by_date(test_operations, reverse=True)
     assert result[0]['date'] == '2023-01-03'
