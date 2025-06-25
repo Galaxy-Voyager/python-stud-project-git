@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pandas (>=2.3.0,<3.0.0)"
 ]
 
 
@@ -37,4 +38,8 @@ ensure_newline_before_comments = true
 disallow_untyped_defs = true
 warn_return_any = true
 exclude = "venv"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_level = "INFO"
 
