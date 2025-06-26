@@ -1,5 +1,6 @@
 from src.processing.counter import count_transactions
 
+
 def test_count_transactions():
     transactions = [
         {"description": "Payment"},

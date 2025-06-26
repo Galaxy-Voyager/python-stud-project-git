@@ -1,5 +1,4 @@
-from collections import Counter
-from typing import List, Dict
+from typing import Dict, List
 
 
 def count_transactions(transactions: List[Dict], categories: List[str]) -> Dict[str, int]:

@@ -1,5 +1,5 @@
 import re
-from typing import List, Dict
+from typing import Dict, List
 
 
 def search_transactions(transactions: List[Dict], search_str: str) -> List[Dict]:

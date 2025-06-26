@@ -1,5 +1,7 @@
 import pytest
+
 from src.processing.search import search_transactions
+
 
 @pytest.fixture
 def sample_transactions():
@@ -8,6 +10,7 @@ def sample_transactions():
         {"description": "Transfer", "state": "CANCELED"},
         {"description": "Deposit", "state": "EXECUTED"}
     ]
+
 
 def test_search_transactions(sample_transactions):
     # Поиск без учета регистра

@@ -1,5 +1,7 @@
 import pytest
+
 from src.processing.filters import filter_by_state, sort_by_date
+
 
 @pytest.fixture
 def test_data():
@@ -9,6 +11,7 @@ def test_data():
         {"id": 3, "state": "EXECUTED", "date": "2023-01-03"}
     ]
 
+
 def test_filter_by_state(test_data):
     # Фильтрация по статусу EXECUTED
     result = filter_by_state(test_data, "EXECUTED")
@@ -17,6 +20,7 @@ def test_filter_by_state(test_data):
 
     # Фильтрация по несуществующему статусу
     assert len(filter_by_state(test_data, "PENDING")) == 0
+
 
 def test_sort_by_date(test_data):
     # Сортировка по убыванию (по умолчанию)
